@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  /* Primary colors */
+  --Nutmeg: hsl(14, 45%, 36%);
+  --Dark_Raspberry: hsl(332, 51%, 32%);
+  /* Secondary colors */
+  --White: hsl(0, 0%, 100%);
+  --Rose_White: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --Light_Grey: hsl(30, 18%, 87%);
+  --Wenge_Brown: hsl(30, 10%, 34%);
+  --Dark_Charcoal: hsl(24, 5%, 18%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Outfit", "Young Serif", sans-serif;
+  background-color: var(--Eggshell);
+}
+
+img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+h3 {
+  font-family: "Young Serif", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-family: "Young Serif", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 550;
+  color: var(--Nutmeg);
+}
+
+h5 {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+p {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--Dark_Charcoal);
+  opacity: 0.9;
+}
+
+ul {
+  /* list-style: none; */
+  /* border: 2px solid red; */
+  padding: 1rem;
+}
+
+li {
+  /* border: 2px solid purple; */
+  margin-top: 1rem;
+}
+
+main {
+  /* border: 2px solid orangered; */
+  /* max-width: 1440px; */
+  padding: 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: var(--Eggshell);
+}
+
+.container {
+  /* border: 2px solid maroon; */
+  padding: 2rem;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  border-radius: 15px;
+  gap: 2rem;
+  background-color: var(--White);
+  max-width: 50rem;
+}
+
+/* Title recipe */
+.title {
+  /* border: 2px solid blue; */
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.title_desc {
+  /* border: 2px solid orange; */
+  line-height: 1.5rem;
+}
+
+/* Preparation */
+.prep {
+  /* border: 2px solid orangered; */
+  background-color: var(--Rose_White);
+  padding: 1rem 1.5rem;
+}
+
+.prep_title {
+  color: var(--Dark_Raspberry);
+  padding-bottom: 0.5rem;
+}
+
+.list_prep::marker {
+  color: var(--Dark_Raspberry);
+}
+
+.bold {
+  color: var(--Dark_Charcoal);
+  font-weight: 700;
+}
+
+/* Ingredient */
+.list {
+  font-weight: 500;
+  color: var(--Dark_Charcoal);
+  opacity: 0.9;
+}
+
+.list_ing::marker {
+  color: var(--Nutmeg);
+}
+
+hr {
+  border-top: 1px solid var(--Light_Grey);
+  width: 100%;
+}
+
+/* Instruction */
+.instruction {
+  /* width: 55%; */
+  line-height: 1.5rem;
+}
+
+.list_inst::marker {
+  color: var(--Nutmeg);
+  font-weight: 700;
+}
+
+/* table */
+.table {
+  line-height: 2rem;
+}
+table {
+  width: 100%;
+  margin: 1rem 0;
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: solid 3px var(--Light_Grey);
+}
+
+tr:nth-child(4) {
+  border-bottom: none;
+}
+
+td:nth-child(2) {
+  font-weight: bold;
+  color: hsl(14, 45%, 36%);
+}
+
+td {
+  padding: 1rem;
+}
+
+.row {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--Dark_Charcoal);
+  opacity: 0.9;
+}
+
+/* Media queries */
+@media screen and (max-width: 375px) {
+  main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /* flex-wrap: wrap; */
+    border-radius: 0;
+  }
+  img {
+    border-radius: 0;
+  }
+  h3 {
+    font-size: 2em;
+  }
+}
